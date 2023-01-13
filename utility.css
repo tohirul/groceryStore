@@ -1,0 +1,68 @@
+/* 
+----- FONT SIZE SYSTEM (rem)
+	 / 4.768rem / 3.815rem / 3.052rem / 2.441rem /  1.953rem / 1.563rem / 1.25rem / 1rem /
+----- FONT SIZE SYSTEM (px)
+	 / 47.68px / 38.15px / 30.52px / 24.41px / 19.53px / 15.63px / 12.5px / 10px /
+
+*/
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 7rem;
+	font-size: 62.5%;
+}
+
+:root {
+	--scale-largest: 4.768rem;
+	--scale-larger: 3.052rem;
+	--scale-large: 2.441rem;
+	--scale-medium: 1.953rem;
+	--scale-small: 1.563rem;
+	--scale-smaller: 1.25rem;
+	--scale-smallest: 1rem;
+	--scale-micro: 0.5rem;
+	--scale-negative: -150%;
+
+	--border-light: 0.2rem solid rgba(0, 0, 0, 0.1);
+	--border-dark: 0.2rem solid rgba(0, 0, 0, 0.2);
+	--box-shadow-light: 0 var(--scale-micro) 1rem rgba(0, 0, 0, 0.1);
+	--box-shadow-dark: 0 0.2rem 1rem rgba(1, 1, 1, 0.25);
+	--outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+	--outline-hover: 0.2rem solid var(--clr-dark);
+
+	--bg-main: #eee;
+	--bg-light: #fff;
+	--orange: #ff7800;
+	--clr-dark: #130f40;
+	--clr-light: #666;
+
+	--text-medium: 1.953rem;
+	--transition-right: right 0.5s linear;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+
+	line-height: 1.5;
+	font-family: "Poppins", "Montserrat", sans-serif;
+	text-decoration: none;
+	text-transform: capitalize;
+
+	/* transition: all 0.3s ease-in-out; */
+}
+
+body {
+	width: 100vw;
+	background: var(--bg-main);
+}
+section {
+	width: 100vw;
+
+	padding: var(--scale-large) 9%;
+}

@@ -1,0 +1,29 @@
+.home {
+	margin-top: calc((var(--scale-largest) * 2)- var(--scale-smallest));
+	padding: calc(var(--scale-largest) * 6) 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: url("./image/banner-bg.webp") no-repeat center;
+	background-size: cover;
+}
+.home .content {
+	width: calc(var(--scale-larger) * 30);
+	text-align: center;
+}
+.home .content h3 {
+	color: var(--clr-dark);
+	font-size: var(--scale-largest);
+	letter-spacing: -1.5px;
+}
+.home .content h3 span {
+	color: var(--orange);
+}
+.home .content p {
+	padding: var(--scale-smallest) 0;
+	color: var(--clr-light);
+	font-size: var(--scale-large);
+	line-height: 1.5;
+}

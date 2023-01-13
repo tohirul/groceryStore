@@ -1,0 +1,79 @@
+#menu-btn {
+	display: none;
+}
+
+.btn {
+	margin-top: var(--scale-smallest);
+	padding: calc(var(--scale-smallest) - 0.2rem) var(--scale-larger);
+
+	border: var(--border-dark);
+	border-radius: var(--scale-micro);
+
+	display: inline-block;
+	font-size: var(--scale-small);
+	color: var(--clr-dark);
+	cursor: pointer;
+}
+.btn:hover {
+	background: var(--orange);
+	color: var(--bg-light);
+	border: var(--border-dark);
+}
+
+/* 
+----- Media Queries
+*/
+@media screen and (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+	.header {
+		padding: var(--scale-large);
+	}
+}
+@media screen and (max-width: 768px) {
+	#menu-btn {
+		display: inline-block;
+	}
+
+	.header .navbar {
+		width: calc(var(--scale-larger) * 10);
+		border-radius: var(--scale-micro);
+		box-shadow: var(--box-shadow-dark);
+
+		position: absolute;
+		top: 110%;
+		right: var(--scale-negative);
+		background: var(--bg-light);
+
+		transition: var(--transition-right);
+	}
+	.header .navbar a {
+		margin: var(--scale-large) var(--scale-larger);
+		display: block;
+		font-size: var(--scale-large);
+	}
+	.header .search-form {
+		width: 95%;
+	}
+	section {
+		padding: var(--scale-large);
+	}
+}
+@media screen and (max-width: 450px) {
+	html {
+		font-size: 50%;
+	}
+	.header .navbar,
+	.header .search-form,
+	.header .shopping-cart,
+	.header .user-form {
+		width: 95vw;
+	}
+	.header .search-form.active,
+	.header .shopping-cart.active,
+	.header .user-form.active,
+	.header .navbar.active {
+		right: calc(var(--scale-small) - var(--scale-micro));
+	}
+}
