@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Font Awesome CDN Link -->
+		<!-- Font Awesome CDN -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -14,13 +14,16 @@
 			referrerpolicy="no-referrer"
 		/>
 
-		<!-- Google Fonts -->
+		<!-- Google Fonts CDN -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!-- Swiper CSS CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
 		<!--Custom CSS Stylesheet -->
 		<link rel="stylesheet" href="style.css" />
@@ -188,9 +191,9 @@
 
 		<section class="products" id="products">
 			<h1 class="heading">our <span>Products</span></h1>
-			<div class="product-slider">
-				<div class="wrapper">
-					<div class="box">
+			<div class="swiper product-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide box">
 						<img
 							src="/image/product-img/product-1.png"
 							alt="product-1: fresh orange"
@@ -208,7 +211,7 @@
 						</div>
 						<a href="#">add to cart</a>
 					</div>
-					<div class="box">
+					<div class="swiper-slide box">
 						<img
 							src="/image/product-img/product-2.png"
 							alt="product-2: fresh onion"
@@ -226,7 +229,7 @@
 						</div>
 						<a href="#">add to cart</a>
 					</div>
-					<div class="box">
+					<div class="swiper-slide box">
 						<img
 							src="/image/product-img/product-3.png"
 							alt="product-3: fresh meat"
@@ -244,7 +247,7 @@
 						</div>
 						<a href="#">add to cart</a>
 					</div>
-					<div class="box">
+					<div class="swiper-slide box">
 						<img
 							src="/image/product-img/product-4.png"
 							alt="product-4: fresh cabbage"
@@ -262,7 +265,13 @@
 						</div>
 						<a href="#">add to cart</a>
 					</div>
-					<div class="box">
+					
+				</div>
+
+			</div>
+			<div class="swiper product-slider">
+				<div class="swiper-wrapper">
+<div class="swiper-slide box">
 						<img
 							src="/image/product-img/product-5.png"
 							alt="product-5: fresh potato"
@@ -280,7 +289,7 @@
 						</div>
 						<a href="#">add to cart</a>
 					</div>
-					<div class="box">
+					<div class="swiper-slide box">
 						<img
 							src="/image/product-img/product-6.png"
 							alt="product-6: fresh avocado"
@@ -298,7 +307,7 @@
 						</div>
 						<a href="#">add to cart</a>
 					</div>
-					<div class="box">
+					<div class="swiper-slide box">
 						<img
 							src="/image/product-img/product-7.png"
 							alt="product-7: fresh carrot"
@@ -316,7 +325,7 @@
 						</div>
 						<a href="#">add to cart</a>
 					</div>
-					<div class="box">	
+					<div class="swiper-slide box">	
 						<img
 							src="/image/product-img/product-8.png"
 							alt="product-8: green lemon"
@@ -341,6 +350,18 @@
 
 		<!-- Products Section Ends -->
 
+
+		<!-- Categories Section Starts -->
+
+		<section class="categories" id="categories">
+			<h1 class="heading">product<span>categories</span></h1>
+			<div class="box-container">
+				<div class="box"></div>
+			</div>
+		</section>
+
+		<!-- Categories Section Ends -->
+
 		<br /><br />
 		<br />
 		<br />
@@ -373,6 +394,10 @@
 		<br />
 		<br />
 		<br />
+
+		<!-- Swiper JavaScript CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 		<!-- Custom JavaScript -->
 		<script src="main.js"></script>
 	</body>
