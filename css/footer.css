@@ -1,0 +1,91 @@
+.footer {
+	background: var(--clr-light);
+	border-bottom: var(--scale-medium) solid var(--orange);
+}
+.footer .box-container {
+	display: grid;
+	grid-template-columns: var(--grid-template);
+	gap: var(--scale-small);
+}
+.footer .box-container .box h3 {
+	padding: var(--scale-smallest) 0;
+	font-size: var(--scale-large);
+	color: var(--clr-dark);
+}
+.footer .box-container .box h3 i {
+	color: var(--orange);
+}
+.footer .box-container .box .links {
+	padding: var(--scale-small) 0;
+	display: block;
+	color: var(--clr-gray);
+	font-size: var(--scale-small);
+}
+.footer .box-container .box .links i {
+	padding-right: var(--scale-micro);
+	color: var(--orange);
+}
+.footer .box-container .box .links:hover i {
+	padding-right: var(--scale-medium);
+}
+.footer .box-container .box p {
+	padding: var(--scale-smallest) 0;
+	line-height: 1.7;
+	color: var(--clr-gray);
+	font-size: var(--scale-small);
+}
+.footer .box-container .box .share {
+	display: flex;
+	justify-content: start;
+}
+.footer .box-container .box .share a {
+	width: var(--scale-largest);
+	height: var(--scale-largest);
+	margin-right: var(--scale-micro);
+	border-radius: var(--scale-micro);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: var(--clr-main);
+	color: var(--clr-dark);
+	font-size: var(--scale-medium);
+	transition: all 0.5s ease-in-out;
+}
+.footer .box-container .box .share a:hover {
+	color: var(--orange);
+	box-shadow: var(--box-shadow-dark);
+}
+
+.footer .box-container .box .email {
+	width: 100%;
+	margin: var(--scale-micro) 0;
+	padding: var(--scale-small);
+	border-radius: var(--scale-micro);
+	background: var(--clr-main);
+	color: var(--clr-dark);
+	font-size: var(--scale-small);
+	text-transform: none;
+}
+
+.footer .box-container .box .payment-img {
+	height: var(--scale-larger);
+}
+.footer .box-container .box .btn {
+	margin-bottom: var(--scale-medium);
+}
+.footer .credit {
+	margin-top: var(--scale-medium);
+	padding: var(--scale-smallest);
+	padding-top: var(--scale-larger);
+	border-top: var(--border-light);
+
+	text-align: center;
+	color: var(--clr-dark);
+	font-size: var(--scale-smaller);
+}
+
+.footer .credit span {
+	color: var(--orange);
+}

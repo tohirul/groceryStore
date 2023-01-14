@@ -17,23 +17,11 @@
 ----- Media Queries
 */
 @media screen and (max-width: 1920px) {
-	.home {
-		padding: calc(var(--scale-largest) * 4) 0;
-	}
-	.features .box-container {
-		margin: 0 var(--scale-largest);
-	}
-	.features .box-container {
-		padding-left: calc(var(--scale-largest) * 3);
-	}
 }
 
 @media screen and (max-width: 1440px) {
 	.home {
 		padding: calc(var(--scale-largest) * 3) 0;
-	}
-	.features .box-container {
-		padding-left: calc(var(--scale-largest) * 2);
 	}
 }
 
@@ -62,9 +50,6 @@
 	}
 	.home .content p {
 		display: none;
-	}
-	.features .box-container {
-		padding-left: var(--scale-largest);
 	}
 }
 @media screen and (max-width: 768px) {
@@ -99,9 +84,6 @@
 	.features .heading {
 		font-size: var(--scale-larger);
 	}
-	.features .box-container {
-		padding-left: var(--scale-larger);
-	}
 }
 @media screen and (max-width: 480px) {
 	html {
@@ -130,18 +112,11 @@
 	.header .navbar.active {
 		right: calc(var(--scale-small) - var(--scale-micro));
 	}
-	.features .box-container {
-		padding-left: var(--scale-medium);
-	}
 }
 
 @media screen and (max-width: 375px) {
 	.home .content h1,
 	.features .heading {
 		font-size: var(--scale-large);
-	}
-	.features .box-container {
-		margin: 3%;
-		padding-left: var(--scale-large);
 	}
 }
