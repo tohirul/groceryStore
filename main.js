@@ -1,4 +1,5 @@
-const home = document.getElementById("home");
+const elements = document.querySelectorAll("section");
+const overlay = document.querySelector(".overlay");
 const navbar = document.querySelector(".navbar");
 const searchForm = document.querySelector(".search-form");
 const shoppingCart = document.querySelector(".shopping-cart");
@@ -9,40 +10,53 @@ const searchBtn = document.getElementById("search-btn");
 const cartBtn = document.getElementById("cart-btn");
 const userBtn = document.getElementById("user-btn");
 
-home.onclick = () => {
-	shoppingCart.classList.remove("active");
-	form.classList.remove("active");
-	searchForm.classList.remove("active");
-	navbar.classList.remove("active");
-};
+elements.forEach(
+	(el) =>
+		(el.onclick = () => {
+			shoppingCart.classList.remove("active");
+			form.classList.remove("active");
+			searchForm.classList.remove("active");
+			navbar.classList.remove("active");
+		})
+);
 window.onscroll = () => {
 	shoppingCart.classList.remove("active");
 	form.classList.remove("active");
 	searchForm.classList.remove("active");
 	navbar.classList.remove("active");
 };
-
+overlay.addEventListener("click", () => {
+	shoppingCart.classList.remove("active");
+	form.classList.remove("active");
+	searchForm.classList.remove("active");
+	navbar.classList.remove("active");
+	overlay.classList.remove("active");
+});
 menuBtn.onclick = () => {
 	shoppingCart.classList.remove("active");
 	form.classList.remove("active");
 	searchForm.classList.remove("active");
 	navbar.classList.toggle("active");
+	overlay.classList.toggle("active");
 };
 searchBtn.onclick = () => {
 	navbar.classList.remove("active");
 	shoppingCart.classList.remove("active");
 	form.classList.remove("active");
 	searchForm.classList.toggle("active");
+	overlay.classList.remove("active");
 };
 cartBtn.onclick = () => {
 	navbar.classList.remove("active");
 	searchForm.classList.remove("active");
 	form.classList.remove("active");
 	shoppingCart.classList.toggle("active");
+	overlay.classList.remove("active");
 };
 userBtn.onclick = () => {
 	navbar.classList.remove("active");
 	searchForm.classList.remove("active");
 	shoppingCart.classList.remove("active");
 	form.classList.toggle("active");
+	overlay.classList.remove("active");
 };

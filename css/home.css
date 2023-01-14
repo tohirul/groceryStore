@@ -6,6 +6,7 @@
 	align-items: center;
 	justify-content: center;
 
+	position: relative;
 	background: url("./image/banner-bg.webp") no-repeat center;
 	background-size: cover;
 }
@@ -13,17 +14,17 @@
 	width: calc(var(--scale-larger) * 30);
 	text-align: center;
 }
-.home .content h3 {
+.home .content h1 {
 	color: var(--clr-dark);
 	font-size: var(--scale-largest);
 	letter-spacing: -1.5px;
 }
-.home .content h3 span {
+.home .content h1 span {
 	color: var(--orange);
 }
 .home .content p {
 	padding: var(--scale-smallest) 0;
-	color: var(--clr-light);
-	font-size: var(--scale-large);
 	line-height: 1.5;
+	color: var(--clr-dark);
+	font-size: var(--scale-large);
 }

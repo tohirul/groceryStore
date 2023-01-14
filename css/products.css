@@ -1,0 +1,6 @@
+.products .products-slider {
+	padding: var(--scale-smallest);
+}
+.products .products-slider:first-child {
+	margin-bottom: var(--scale-medium);
+}

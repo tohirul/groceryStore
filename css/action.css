@@ -15,3 +15,8 @@
 		right: var(--scale-small);
 	}
 }
+@media screen and (max-width: 480px) {
+	.overlay.active {
+		top: 0;
+	}
+}
