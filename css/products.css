@@ -12,13 +12,13 @@
 .products .product-slider .box {
 	padding: var(--scale-larger) var(--scale-medium);
 	border-radius: var(--scale-micro);
-	outline: var(--outline-theme);
-	outline-offset: -1rem;
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
 
 	text-align: center;
 	background: var(--clr-light);
 	box-shadow: var(--box-shadow-dark);
-	transition: outline-offset 0.5s ease-in-out;
+	transition: var(--transition-outline-offset);
 }
 .products .product-slider .box:hover {
 	outline-offset: 0;

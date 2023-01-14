@@ -1,0 +1,37 @@
+.review .review-slider {
+	padding: var(--scale-smallest);
+}
+.review .review-slider .box {
+	padding: var(--scale-larger) var(--scale-large);
+	border-radius: var(--scale-micro);
+	box-shadow: var(--box-shadow-light);
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
+	background: var(--clr-light);
+	transition: var(--transition-outline-offset);
+}
+.review .review-slider .box:hover {
+	outline: var(--outline-hover);
+	outline-offset: 0rem;
+}
+.review .review-slider .box img {
+	height: calc(var(--scale-small) * 10);
+	width: calc(var(--scale-small) * 10);
+	border-radius: 50%;
+}
+.review .review-slider .box p {
+	padding: var(--scale-smallest) 0;
+	line-height: 1.5;
+	color: var(--clr-gray);
+	font-size: var(--scale-medium);
+}
+.review .review-slider .box h3 {
+	padding-bottom: var(--scale-micro);
+	line-height: 1.7;
+	color: var(--clr-gray);
+	font-size: var(--scale-large);
+}
+.review .review-slider .box .stars i {
+	color: var(--orange);
+	font-size: var(--scale-medium);
+}

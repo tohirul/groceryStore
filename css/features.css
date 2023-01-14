@@ -3,18 +3,18 @@
 	margin: 0 10%;
 	/* padding: 0 var(--scale-larger); */
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-	gap: var(--scale-larger);
+	grid-template-columns: var(--grid-template);
+	gap: var(--scale-small);
 }
 .features .box-container .box {
 	padding: var(--scale-larger) var(--scale-medium);
 	box-shadow: var(--box-shadow-dark);
-	outline: var(--outline-theme);
-	outline-offset: -1rem;
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
 
 	background: var(--clr-light);
 	text-align: center;
-	transition: outline-offset 0.5s ease-in-out;
+	transition: var(--transition-outline-offset);
 }
 .features .box-container .box:hover {
 	outline: var(--outline-hover);

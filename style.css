@@ -3,6 +3,10 @@
 @import url("./css/home.css");
 @import url("./css/features.css");
 @import url("./css/products.css");
+@import url("./css/categories.css");
+@import url("./css/review.css");
+@import url("./css/blogs.css");
+@import url("./css/footer.css");
 @import url("./css/action.css");
 
 #menu-btn {
